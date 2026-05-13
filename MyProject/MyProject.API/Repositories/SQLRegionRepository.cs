@@ -17,13 +17,13 @@ namespace MyProject.API.Repositories
         }
 
 
-        public async Task<Region?> GetByIdAsync(Guid id )
+        public async Task<Region?> GetByIdAsync(Guid id)
         {
             return await _dbcontext.Regions.FirstOrDefaultAsync(x => x.Id == id);
 
         }
 
-     
+
         public async Task<Region> CreateAsync(Region region)
         {
             await _dbcontext.Regions.AddAsync(region);
@@ -57,4 +57,5 @@ namespace MyProject.API.Repositories
             return existingRegion;
 
         }
+    }
 }

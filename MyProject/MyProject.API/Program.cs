@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MyProject.API.Data;
+using MyProject.API.Mappers;
+using AutoMapper;
 using MyProject.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +18,7 @@ builder.Services.AddDbContext<MyProjectDbContext>(options =>
 
 builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
 
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 var app = builder.Build();
 

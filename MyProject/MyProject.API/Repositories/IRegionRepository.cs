@@ -5,11 +5,11 @@ namespace MyProject.API.Repositories
     public interface IRegionRepository
     {
         Task<List<Region>> GetAllAsync();
-        Task<List<Region>> GetByIdAsync(Guid id);
+        Task<Region?> GetByIdAsync(Guid id);
 
-        Task<List<Region>> CreateAsync(Region region);
+        Task<Region> CreateAsync(Region region);
 
-        Task<List<Region>> UpdateAsync(Guid id, Region region);
-        Task<List<Region>> DeleteAsync(Guid id);
+        Task<Region?> UpdateAsync(Guid id, Region region);
+        Task<Region?> DeleteAsync(Guid id);
     }
 }
