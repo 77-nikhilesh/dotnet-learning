@@ -1,0 +1,278 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\myproject.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\myproject.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\controllers\\regioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\controllers\\regioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\repositories\\iregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\repositories\\iregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\dtos\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\dtos\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\models\\domain\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\models\\domain\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\data\\myprojectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\data\\myprojectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\dtos\\updateregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\dtos\\updateregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\dtos\\addregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\dtos\\addregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\migrations\\20260507074806_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\migrations\\20260507074806_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\models\\domain\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\models\\domain\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|c:\\users\\nikhileshgolla\\desktop\\csharp\\myproject\\myproject.api\\models\\domain\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9974E8-F6BD-071D-9D70-3087EBAFE4E5}|MyProject.API\\MyProject.API.csproj|solutionrelative:myproject.api\\models\\domain\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\.gitignore",
+              "RelativeDocumentMoniker": "MyProject.API\\.gitignore",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\.gitignore",
+              "RelativeToolTip": "MyProject.API\\.gitignore",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAwwOYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-13T04:49:19.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SQLRegionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Repositories\\SQLRegionRepository.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\Repositories\\SQLRegionRepository.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Repositories\\SQLRegionRepository.cs",
+              "RelativeToolTip": "MyProject.API\\Repositories\\SQLRegionRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:40:34.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRegionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Repositories\\IRegionRepository.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\Repositories\\IRegionRepository.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Repositories\\IRegionRepository.cs",
+              "RelativeToolTip": "MyProject.API\\Repositories\\IRegionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:36:18.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegionDto.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\DTOs\\RegionDto.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\DTOs\\RegionDto.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\DTOs\\RegionDto.cs",
+              "RelativeToolTip": "MyProject.API\\DTOs\\RegionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T07:28:21.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Region.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Models\\Domain\\Region.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\Models\\Domain\\Region.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Models\\Domain\\Region.cs",
+              "RelativeToolTip": "MyProject.API\\Models\\Domain\\Region.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T11:41:36.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyProject.API.csproj",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\MyProject.API.csproj",
+              "RelativeDocumentMoniker": "MyProject.API\\MyProject.API.csproj",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\MyProject.API.csproj",
+              "RelativeToolTip": "MyProject.API\\MyProject.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-06T12:35:25.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegionController.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Controllers\\RegionController.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\Controllers\\RegionController.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Controllers\\RegionController.cs",
+              "RelativeToolTip": "MyProject.API\\Controllers\\RegionController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAApwIwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T08:12:32.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Program.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\Program.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Program.cs",
+              "RelativeToolTip": "MyProject.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T06:09:10.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MyProjectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Data\\MyProjectDbContext.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\Data\\MyProjectDbContext.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Data\\MyProjectDbContext.cs",
+              "RelativeToolTip": "MyProject.API\\Data\\MyProjectDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T12:36:19.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\appsettings.json",
+              "RelativeDocumentMoniker": "MyProject.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\appsettings.json",
+              "RelativeToolTip": "MyProject.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-06T12:38:29.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateRegionRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\DTOs\\UpdateRegionRequestDto.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\DTOs\\UpdateRegionRequestDto.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\DTOs\\UpdateRegionRequestDto.cs",
+              "RelativeToolTip": "MyProject.API\\DTOs\\UpdateRegionRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T07:47:21.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddRegionRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\DTOs\\AddRegionRequestDto.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\DTOs\\AddRegionRequestDto.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\DTOs\\AddRegionRequestDto.cs",
+              "RelativeToolTip": "MyProject.API\\DTOs\\AddRegionRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T11:47:31.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20260507074806_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Migrations\\20260507074806_InitialMigration.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\Migrations\\20260507074806_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Migrations\\20260507074806_InitialMigration.cs",
+              "RelativeToolTip": "MyProject.API\\Migrations\\20260507074806_InitialMigration.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T07:49:16.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Difficulty.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Models\\Domain\\Difficulty.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\Models\\Domain\\Difficulty.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Models\\Domain\\Difficulty.cs",
+              "RelativeToolTip": "MyProject.API\\Models\\Domain\\Difficulty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T11:41:20.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MyProject.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MyProject.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-07T06:14:15.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Walk.cs",
+              "DocumentMoniker": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Models\\Domain\\Walk.cs",
+              "RelativeDocumentMoniker": "MyProject.API\\Models\\Domain\\Walk.cs",
+              "ToolTip": "C:\\Users\\NikhileshGolla\\Desktop\\Csharp\\MyProject\\MyProject.API\\Models\\Domain\\Walk.cs",
+              "RelativeToolTip": "MyProject.API\\Models\\Domain\\Walk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T11:41:58.133Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
