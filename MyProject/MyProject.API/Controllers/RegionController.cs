@@ -27,11 +27,11 @@ namespace MyProject.API.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn, [FromQuery] string? filterQuery)
         {
 
             //Get data from database - domain models
-            var regions = await _regionRepository.GetAllAsync();
+            var regions = await _regionRepository.GetAllAsync(filterOn, filterQuery);
 
           
             //Map domain models to Dtos

@@ -11,9 +11,24 @@ namespace MyProject.API.Repositories
         {
             _dbcontext = dbcontext;
         }
-        public async Task<List<Region>> GetAllAsync()
+        public async Task<List<Region>> GetAllAsync(string? filterOn = null, string? filterQuery = null)
         {
-            return await _dbcontext.Regions.ToListAsync();
+            var regions = _dbcontext.Regions.AsQueryable();
+
+            //Filtering
+            if(string.IsNullOrWhiteSpace(filterOn)== false && string.IsNullOrWhiteSpace(filterQuery) == false)
+            {
+                if (filterOn.Equals("Name",StringComparison.OrdinalIgnoreCase))
+                {
+                    regions = regions.Where(x => x.Name.Contains(filterQuery));
+                }
+                else if (filterOn.Equals("Code", StringComparison.OrdinalIgnoreCase))
+                {
+                    regions = regions.Where(x => x.Code.Contains(filterQuery));
+                }
+            }
+
+            return await regions.ToListAsync();
         }
 
 
