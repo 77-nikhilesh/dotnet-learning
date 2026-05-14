@@ -11,7 +11,7 @@ namespace MyProject.API.Repositories
         {
             _dbcontext = dbcontext;
         }
-        public async Task<List<Region>> GetAllAsync(string? filterOn = null, string? filterQuery = null)
+        public async Task<List<Region>> GetAllAsync(string? filterOn = null, string? filterQuery = null, string? SortBy = null, bool? isAscending = true    )
         {
             var regions = _dbcontext.Regions.AsQueryable();
 
@@ -25,6 +25,14 @@ namespace MyProject.API.Repositories
                 else if (filterOn.Equals("Code", StringComparison.OrdinalIgnoreCase))
                 {
                     regions = regions.Where(x => x.Code.Contains(filterQuery));
+                }
+            }
+
+            if(string.IsNullOrWhiteSpace(SortBy) == false)
+            {
+                if(SortBy.Equals("Name", StringComparison.OrdinalIgnoreCase))
+                {
+                    regions = (bool)isAscending ? regions.OrderBy(x => x.Name) : regions.OrderByDescending(x => x.Name); 
                 }
             }
 
