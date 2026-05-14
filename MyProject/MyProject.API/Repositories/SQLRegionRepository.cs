@@ -11,7 +11,7 @@ namespace MyProject.API.Repositories
         {
             _dbcontext = dbcontext;
         }
-        public async Task<List<Region>> GetAllAsync(string? filterOn = null, string? filterQuery = null, string? SortBy = null, bool? isAscending = true    )
+        public async Task<List<Region>> GetAllAsync(string? filterOn = null, string? filterQuery = null, string? SortBy = null, bool? isAscending = true, int PageNumber=1,int PageSize=20   )
         {
             var regions = _dbcontext.Regions.AsQueryable();
 
@@ -28,6 +28,7 @@ namespace MyProject.API.Repositories
                 }
             }
 
+            //Sorting
             if(string.IsNullOrWhiteSpace(SortBy) == false)
             {
                 if(SortBy.Equals("Name", StringComparison.OrdinalIgnoreCase))
@@ -36,7 +37,10 @@ namespace MyProject.API.Repositories
                 }
             }
 
-            return await regions.ToListAsync();
+            //Pagination
+            var skipPages = (PageNumber - 1) * PageSize;
+
+            return await regions.Skip(skipPages).Take(PageSize).ToListAsync();
         }
 
 

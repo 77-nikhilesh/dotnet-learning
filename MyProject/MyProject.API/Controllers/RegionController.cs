@@ -27,11 +27,13 @@ namespace MyProject.API.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] string? filterOn, [FromQuery] string? filterQuery,[FromQuery] string? SortBy, [FromQuery] bool? isAscending)
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn, [FromQuery] string? filterQuery,
+            [FromQuery] string? SortBy, [FromQuery] bool? isAscending,
+            [FromQuery] int PageNumber = 1, [FromQuery] int PageSize=20)
         {
 
             //Get data from database - domain models
-            var regions = await _regionRepository.GetAllAsync(filterOn, filterQuery, SortBy, isAscending);
+            var regions = await _regionRepository.GetAllAsync(filterOn, filterQuery, SortBy, isAscending, PageNumber,PageSize);
 
           
             //Map domain models to Dtos
