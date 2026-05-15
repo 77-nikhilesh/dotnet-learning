@@ -18,6 +18,7 @@ namespace MyProject.API.Mappers
             //AutoMapper configuration for Walk
             CreateMap<Walk, WalksDto>().ReverseMap();
             CreateMap<AddWalksRequestDto, Walk>().ReverseMap();
+            CreateMap<UpdateWalksRequestDto, Walk>().ReverseMap();
 
             //AutoMapper configuration for Difficulty
             CreateMap<Difficulty, DifficultyDto>().ReverseMap();

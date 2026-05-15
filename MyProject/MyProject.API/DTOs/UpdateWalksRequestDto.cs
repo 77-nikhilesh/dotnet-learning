@@ -1,6 +1,6 @@
 ﻿namespace MyProject.API.DTOs
 {
-    public class AddWalksRequestDto
+    public class UpdateWalksRequestDto
     {
         public required string Name { get; set; }
         public required string Description { get; set; }

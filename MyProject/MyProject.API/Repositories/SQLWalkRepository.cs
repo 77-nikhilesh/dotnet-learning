@@ -1,6 +1,7 @@
 ﻿using MyProject.API.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 using MyProject.API.Data;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace MyProject.API.Repositories
 {
@@ -28,7 +29,35 @@ namespace MyProject.API.Repositories
             return walk;
         }
 
+        public async Task<Walk?> UpdateWalkAsync(Guid id, Walk walk)
+        {
+            var existingWalk = await _dbContext.Walks.FindAsync(id);
+            if (existingWalk == null)
+            {
+                return null;
+            }
+            existingWalk.Name = walk.Name;
+            existingWalk.Description = walk.Description;
+            existingWalk.LengthInKm = walk.LengthInKm;
+            existingWalk.WalkImageUrl = walk.WalkImageUrl;
+            existingWalk.DifficultyId = walk.DifficultyId;
+            existingWalk.RegionId = walk.RegionId;
 
+            await _dbContext.SaveChangesAsync();
+            return existingWalk;
+        }
+
+        public async Task<Walk?> DeleteWalkAsync(Guid id)
+        {
+            var existingWalk = await _dbContext.Walks.FindAsync(id);
+            if (existingWalk == null)
+            {
+                return null;
+            }
+            _dbContext.Walks.Remove(existingWalk);
+            await _dbContext.SaveChangesAsync();
+            return existingWalk;
+
+        }
     }
 }
-    
