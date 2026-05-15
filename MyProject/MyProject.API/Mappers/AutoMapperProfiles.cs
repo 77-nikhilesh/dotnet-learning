@@ -9,9 +9,18 @@ namespace MyProject.API.Mappers
     {
         public AutoMapperProfiles()
         {
+            //AutoMapper configuration for Region
             CreateMap<Region, RegionDto>().ReverseMap();
             CreateMap<AddRegionRequestDto, Region>().ReverseMap();
             CreateMap<UpdateRegionRequestDto, Region>().ReverseMap();
+
+
+            //AutoMapper configuration for Walk
+            CreateMap<Walk, WalksDto>().ReverseMap();
+            CreateMap<AddWalksRequestDto, Walk>().ReverseMap();
+
+            //AutoMapper configuration for Difficulty
+            CreateMap<Difficulty, DifficultyDto>().ReverseMap();
         }
     }
 }
