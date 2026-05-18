@@ -2,6 +2,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MyProject.API.CustomActionFilters;
 using MyProject.API.Data;
 using MyProject.API.Dto;
 using MyProject.API.DTOs;
@@ -61,11 +62,10 @@ namespace MyProject.API.Controllers
 
         //Post Method to add new region
         [HttpPost]
+        [ValidateModel] 
         public async Task<IActionResult> Create(AddRegionRequestDto addRegionRequestDto)
         {
 
-            if (ModelState.IsValid)
-            {
                 //convert Dto to Domain model(Entity)
                 var regionDomain = mapper.Map<Region>(addRegionRequestDto);
 
@@ -78,12 +78,6 @@ namespace MyProject.API.Controllers
                 var regionDto = mapper.Map<RegionDto>(regionDomain);
 
                 return CreatedAtAction(nameof(GetActionById), new { id = regionDomain.Id }, regionDto);
-
-            }
-            else
-            {
-                return BadRequest(ModelState);
-            }
            
         }
 
@@ -91,10 +85,11 @@ namespace MyProject.API.Controllers
 
         //Update
         [HttpPut("{id}")]
+        [ValidateModel] // Custom action filter to validate the model state before executing the action
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto)
         {
 
-            if (ModelState.IsValid) {
+           
                 //Map Dto to Domain model
                 var regionDomainModel = mapper.Map<Region>(updateRegionRequestDto);
 
@@ -108,14 +103,8 @@ namespace MyProject.API.Controllers
 
                 //Map domain model back to Dto
                 var regionDto = mapper.Map<RegionDto>(regionDomainModel);
-
                 return Ok(regionDto);
-            }
-            else
-            {
-                return BadRequest(ModelState);
-            }
-           
+
         }
 
         //Delete

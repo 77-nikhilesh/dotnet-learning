@@ -4,6 +4,7 @@ using AutoMapper;
 using MyProject.API.DTOs;
 using MyProject.API.Repositories;
 using MyProject.API.Models.Domain;
+using MyProject.API.CustomActionFilters;
 
 namespace MyProject.API.Controllers
 {
@@ -42,11 +43,11 @@ namespace MyProject.API.Controllers
         }
 
         [HttpPost]
+        [ValidateModel]
         public async Task<IActionResult> AddWalks([FromBody] AddWalksRequestDto addWalksRequestDto)
         {
 
-            if (ModelState.IsValid)
-            {
+           
                 //Map dto to Domain model
                 var walkDomainModel = mappers.Map<Walk>(addWalksRequestDto);
 
@@ -57,18 +58,15 @@ namespace MyProject.API.Controllers
 
                 return Ok(walkDto);
 
-            }
-            else
-            {
-                return BadRequest(ModelState);
-            }
+            
             
         }
 
         [HttpPut("{id:guid}")]
+        [ValidateModel]
         public async Task<IActionResult> UpdateWalks(Guid id, [FromBody] UpdateWalksRequestDto updateWalksRequestDto)
         {
-            if(ModelState.IsValid){
+          
                 // Map dto to Domain model
                 var walkDomainModel = mappers.Map<Walk>(updateWalksRequestDto);
                 walkDomainModel = await _walkRepository.UpdateWalkAsync(id, walkDomainModel);
@@ -77,14 +75,9 @@ namespace MyProject.API.Controllers
                 {
                     return NotFound();
                 }
-                // Map Domain model to dto
-                var walkDto = mappers.Map<WalksDto>(walkDomainModel);
-                return Ok(walkDto);
-            }
-            else
-            {
-                return BadRequest(ModelState);
-            }
+            // Map Domain model to dto
+            var walkDto = mappers.Map<WalksDto>(walkDomainModel);
+            return Ok(walkDto);
           
         }
 
