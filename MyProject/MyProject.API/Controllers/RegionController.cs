@@ -63,18 +63,28 @@ namespace MyProject.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(AddRegionRequestDto addRegionRequestDto)
         {
-            //convert Dto to Domain model(Entity)
-            var regionDomain = mapper.Map<Region>(addRegionRequestDto);
 
-          
+            if (ModelState.IsValid)
+            {
+                //convert Dto to Domain model(Entity)
+                var regionDomain = mapper.Map<Region>(addRegionRequestDto);
 
-            regionDomain = await _regionRepository.CreateAsync(regionDomain);
 
 
-            //Map domain back to Dto
-            var regionDto = mapper.Map<RegionDto>(regionDomain);
+                regionDomain = await _regionRepository.CreateAsync(regionDomain);
 
-            return CreatedAtAction(nameof(GetActionById), new { id = regionDomain.Id }, regionDto);
+
+                //Map domain back to Dto
+                var regionDto = mapper.Map<RegionDto>(regionDomain);
+
+                return CreatedAtAction(nameof(GetActionById), new { id = regionDomain.Id }, regionDto);
+
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+           
         }
 
 
@@ -83,21 +93,29 @@ namespace MyProject.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto)
         {
-            //Map Dto to Domain model
-            var regionDomainModel = mapper.Map<Region>(updateRegionRequestDto);
+
+            if (ModelState.IsValid) {
+                //Map Dto to Domain model
+                var regionDomainModel = mapper.Map<Region>(updateRegionRequestDto);
 
 
-            regionDomainModel  = await _regionRepository.UpdateAsync(id,regionDomainModel);
-            if(regionDomainModel == null)
+                regionDomainModel = await _regionRepository.UpdateAsync(id, regionDomainModel);
+                if (regionDomainModel == null)
                 {
                     return NotFound();
                 }
 
 
-            //Map domain model back to Dto
-            var regionDto = mapper.Map<RegionDto>(regionDomainModel);
+                //Map domain model back to Dto
+                var regionDto = mapper.Map<RegionDto>(regionDomainModel);
 
-            return Ok(regionDto);
+                return Ok(regionDto);
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+           
         }
 
         //Delete
