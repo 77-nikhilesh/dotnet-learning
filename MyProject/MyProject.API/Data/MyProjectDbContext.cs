@@ -6,7 +6,7 @@ namespace MyProject.API.Data
     public class MyProjectDbContext : DbContext
 
     {
-        public MyProjectDbContext(DbContextOptions dbContextOptions) : base (dbContextOptions)
+        public MyProjectDbContext(DbContextOptions<MyProjectDbContext> dbContextOptions) : base (dbContextOptions)
         {
             
         }
