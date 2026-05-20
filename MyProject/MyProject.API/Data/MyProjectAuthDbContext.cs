@@ -11,6 +11,8 @@ namespace MyProject.API.Data
 
         }
 
+        public object Password { get; internal set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
