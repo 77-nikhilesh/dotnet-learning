@@ -100,7 +100,7 @@ MyProject.API/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/dotnet-learning.git
+git clone https://github.com/77-nikhilesh/dotnet-learning.git
 ```
 
 ## Restore Packages
