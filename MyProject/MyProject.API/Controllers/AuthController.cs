@@ -45,5 +45,28 @@ namespace MyProject.API.Controllers
             }
             return BadRequest(identityresult.Errors);
         }
-    }
+
+        [HttpPost]
+        [Microsoft.AspNetCore.Mvc.Route("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto loginRequest)
+        {
+            var user = await userManager.FindByEmailAsync(loginRequest.UserName);
+            if(user != null)
+            {
+                var userPass = await userManager.CheckPasswordAsync(user, loginRequest.Password);
+                if (userPass)
+                {
+                    return Ok("Login successful");
+                }
+                else
+                {
+                    return BadRequest("Invalid password");
+                }
+            }
+            else
+            {
+                return BadRequest("User not found");
+            }
+        }
+   }
 }
