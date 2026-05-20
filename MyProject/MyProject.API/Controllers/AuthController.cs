@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Components;
 using MyProject.API.DTOs;
 using Microsoft.AspNetCore.Identity;
+using MyProject.API.Repositories;
 
 namespace MyProject.API.Controllers
 {
@@ -12,11 +13,12 @@ namespace MyProject.API.Controllers
     public class AuthController : ControllerBase
     {
         private readonly UserManager<IdentityUser> userManager;
+        private readonly ITokenRepository tokenRepository;
 
-        public AuthController(UserManager<IdentityUser> userManager) 
+        public AuthController(UserManager<IdentityUser> userManager, ITokenRepository tokenRepository) 
         {
             this.userManager = userManager;
-
+            this.tokenRepository = tokenRepository;
         }
 
         [HttpPost]
@@ -56,7 +58,15 @@ namespace MyProject.API.Controllers
                 var userPass = await userManager.CheckPasswordAsync(user, loginRequest.Password);
                 if (userPass)
                 {
-                    return Ok("Login successful");
+                    //get user roles
+                    var roles = await userManager.GetRolesAsync(user);
+                    //create token
+                    var jwtToken = tokenRepository.CreateJWTToken(user, roles.ToList());
+                    var response=new LoginResponseDto
+                    {
+                        jwtToken = jwtToken
+                    };
+                    return Ok(response);
                 }
                 else
                 {
